@@ -52,7 +52,7 @@ body {
 }
 
 .pusto10 {
-  height: 270px;
+  height: 130px;
 }
 
 .text1 {
@@ -176,8 +176,7 @@ hr.style8:after {
   color: white;
   transition: 0.3s linear;
   left: -100px;
-  z-index: -3 !important;
-}
+ }
 
 .price a {
   text-decoration: none;
@@ -399,7 +398,8 @@ input:focus {
   background-color: black;
   background-image: url(img/black.jpg);
   background-size: cover;
-  margin-left: -80px !important;
+  margin-left: -80px !important; 
+  margin-top:50px !important;
 }
 .services__text_italic {
   font-family: "Satisfy", cursive;
@@ -554,10 +554,7 @@ footer a {
   color: var(--color3);
   font-size: 19px;
   line-height: 25px;
-}
-.about-us{
-  background-color: ;
-}
+} 
 .about-us__container {
   /* height: 1500px !important;; */
   margin: 0;
