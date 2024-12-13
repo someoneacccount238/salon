@@ -1,61 +1,46 @@
 <!--  Первая страничка -->
 <!DOCTYPE html>
 <html lang="ru-RU">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Beauty Studio - Салон красоты в Киеве" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <script src="js/script.js"></script>
     <title>Beauty Studio</title>
+    <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
-  </head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward_ios" />
+</head>
 
-  <body>
+<body class="container-fluid">
     <nav class="top-menu navbar navbar-expand-lg">
-      <a class="navbar-logo" href="web6.html"
-        ><img src="img/sfdf.png" class="menu__image"
-      /></a>
-      <div class="container-fluid t-menu">
-        <button
-          class="navbar-toggler menu__button"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon menu__icon"></span>
-        </button>
+        <a class="navbar-logo" href="web6.html"><img src="img/sfdf.png" class="menu__image" /></a>
+        <div class="container-fluid t-menu">
+            <button class="navbar-toggler menu__button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon menu__icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="menu-main navbar-nav me-auto">
-            <li class="other menu-item__work_hours">
-              <a class="other"
-                ><script>
-                  get_i18n("menu_item1", "en");
-                </script></a
-              >
-              <ul class="submenu">
-                <div
-                  style="
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="menu-main navbar-nav me-auto">
+                    <li class="other menu-item__work_hours">
+                        <a class="other">
+                            <script>
+                                get_i18n("menu_item1");
+                            </script>
+                        </a>
+                        <ul class="submenu" style="
                     margin-top: -20px;
                     margin-bottom: 5px;
                     cursor: pointer;
@@ -66,183 +51,192 @@
                     background-color: #0f1010;
                     color: white;
                     line-height: 25px;
-                  "
-                >
-                  <p></p><script>
-                    get_i18n("mon_fri", "en");
-                  </script>: 11:00 - 20:00</p>
-                  <p><script>
-                    get_i18n("sat", "en");
-                  </script>: 10:00 - 19:00</p>
-                  <p><script>
-                    get_i18n("sun", "en");
-                  </script>: 10:00 - 17:00</p>
-                </div>
-              </ul>
-            </li>
+                  ">
+                            <li>
+                                <p>
+                                    <script>
+                                        get_i18n("mon_fri");
+                                    </script>: 11:00 - 20:00
+                                </p>
+                                <p>
+                                    <script>
+                                        get_i18n("sat");
+                                    </script>: 10:00 - 19:00
+                                </p>
+                                <p>
+                                    <script>
+                                        get_i18n("sun");
+                                    </script>: 10:00 - 17:00
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
 
-            <li class="other">
-              <a href="#about-us" class="other"
-                ><script>
-                  get_i18n("menu_item2", "en");
-                </script></a
-              >
-            </li>
-            <li class="price">
-              <a href="#services" class="other"
-                ><script>
-                  get_i18n("menu_item3", "en");
-                </script></a
-              >
-            </li>
-            <li class="other">
-              <form class="abc">
-                <input
-                  type="text"
-                  placeholder="I seach for..."
-                  class="menu__input"
-                />
-                <button type="submit" class="submit">
-                  <img src="img/11.png" style="width: 12px; height: 12px" />
-                </button>
-              </form>
-            </li>
-          </ul>
+                    <li class="other nav__about-us">
+                        <a href="#about-us">
+                            <script>
+                                get_i18n("menu_item2");
+                            </script>
+                        </a>
+                    </li>
+                    <li class="price">
+                        <a href="#services" class="other">
+                            <script>
+                                get_i18n("menu_item3");
+                            </script>
+                        </a>
+                    </li>
+                    <!-- <form class="abc">
+                            <input type="text" placeholder="Я ищу..." class="menu__input" />
+                            <button type="submit" class="submit">
+                                <img src="img/11.png" style="width: 12px; height: 12px" />
+                            </button>
+                        </form> -->
+
+                    <button class="title__button_blue nav__button">
+                        <script>
+                            get_i18n("action");
+                        </script>
+                    </button>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
 
     <main>
-      <div class="row">
-        <div class="block1 col-lg-4 col-sm-12 gx-0"></div>
-        <p class="text1 textMain">
-          <script>
-            get_i18n("title1", "en");
-          </script>
-        </p>
-        <div class="text2 textMain">
-          <script>
-            get_i18n("title2", "en");
-          </script>
-        </div>
+        <div class="row">
+            <div class="block1 col-lg-4 col-sm-12 gx-0"></div>
+            <div class="rating">
+                <div class="rating__row">
+                    <img src="img/google.png" alt="star" class="img-fluid google-img" />
+                    <p class="rating__number">
+                        5,0</p>
+                    <img src="img/star.png" alt="star" class="img-fluid star-img" />
+                    <img src="img/star.png" alt="star" class="img-fluid star-img" />
+                    <img src="img/star.png" alt="star" class="img-fluid star-img" />
+                    <img src="img/star.png" alt="star" class="img-fluid star-img" />
+                    <img src="img/star.png" alt="star" class="img-fluid star-img" />
+                </div>
+                <p class="rating__description">
+                    <script>
+                        get_i18n("rating");
+                    </script>
+                </p>
+            </div>
+            <p class="text1 textMain">
+                <script>
+                    get_i18n("title1");
+                </script>
+            </p>
+            <div class="text2 subtextMain">
+                <script>
+                    get_i18n("title2");
+                </script>
+            </div>
 
-        <hr class="style8" />
-        <div class="bigImage">
-          <picture>
-            <source
-              media="(max-width: 1100px)"
-              srcset="img/5-mobile.jpg"
-              class="img_main"
-            />
-            <img
-              src="img/background-image.jpg"
-              alt="a cute kitten"
-              class="img_main"
-            />
-          </picture>
+            <!-- <hr class="style8" /> -->
+            <div class="bigImage">
+                <picture>
+                    <source media="(max-width: 1100px)" srcset="img/5-mobile.jpg" class="img_main" />
+                    <img src="img/background-image.jpg" alt="a cute kitten" class="img_main" />
+                </picture>
+            </div>
         </div>
-        <div class="pusto10"></div>
-      </div>
+        <button class="title__button_blue title__button">
+            <script>
+                get_i18n("action");
+            </script>
+        </button>
+
+        <div class="vertical"></div>
+        <p class="title__action-text">
+            <script>
+                get_i18n("action2");
+            </script>
+        </p>
+
+        <div class="pusto11"></div>
+
     </main>
 
     <section class="services" id="services">
-      <div class="container mb-5">
-        <div
-          class="row services__text_italic services__text_green fst-italic flex justify-content-center"
-        >
-          <script>
-            get_i18n("services__text_italic", "en");
-          </script>
-        </div>
-        <div class="row services__text_large flex justify-content-center mt-5">
-          <script>
-            get_i18n("services__text_large", "en");
-          </script>
-        </div>
-        <div
-          class="row services__text-description flex text-center justify-content-center mt-5"
-        >
-          <script>
-            get_i18n("services__text_description", "en");
-          </script>
-        </div>
-        <div class="row gx-2 flex mb-5 ms-5 services__row">
-          <div class="col-lg-4 col-sm-12">
-            <img
-              src="img/hair.jpg"
-              alt="hair"
-              class="img-fluid col-xs-12 itd_img services__image"
-            />
-            <div class="services__text_white services__text m-5">
-              <p class="services__text_white">
+        <div class="container mb-5">
+            <div class="row services__text_italic services__text_green fst-italic flex justify-content-center">
                 <script>
-                  get_i18n("service1", "en");
+                    get_i18n("services__text_italic");
                 </script>
-              —
-                <script>
-                  get_i18n("from", "en");
-                </script>
-              </p>
-              <p class="fst-italic services__text_white services__text_green  ">
-                500
-                <script>
-                  get_i18n("currency", "en");
-                </script>
-              </p>
             </div>
-          </div>
-
-          <div class="col-lg-4 col-sm-12">
-            <img
-              src="img/nails.jpg"
-              alt="nails"
-              class="img-fluid col-xs-12 itd_img services__image"
-            />
-            <div class="services__text_white">
-              <h3 class="services__text_white">
+            <div class="row services__text_large flex justify-content-center mt-5">
                 <script>
-                  get_i18n("service2", "en");
+                    get_i18n("services__text_large");
                 </script>
-                —
-                <script>
-                  get_i18n("from", "en");
-                </script>
-              </h4>
-              <p class="fst-italic services__text_white services__text_green  ">
-                300
-                <script>
-                  get_i18n("currency", "en");
-                </script>
-              </p>
             </div>
-          </div>
+            <div class="row services__text-description flex text-center justify-content-center mt-5">
+                <script>
+                    get_i18n("services__text_description");
+                </script>
+            </div>
+            <div class="row gx-2 flex mb-5 ms-5 services__row">
+                <div class="col-lg-4 col-sm-12">
+                    <img src="img/hair.jpg" alt="hair" class="img-fluid col-xs-12 itd_img services__image" />
 
-          <div class="col-lg-4 col-sm-12">
-            <img
-              src="img/makeup.jpg"
-              alt="makeup"
-              class="img-fluid col-xs-12 itd_img services__image"
-            />
-            <h4 class="services__text_white">
-              <h3 class="services__text_white">
-                <script>
-                  get_i18n("service3", "en");
-                </script>
-                 —
-                <script>
-                  get_i18n("from", "en");
-                </script>
-              </h4>
-              <p class="fst-italic services__text_white services__text_green  ">
-                400
-                <script>
-                  get_i18n("currency", "en");
-                </script>
-              </p>
-            </h4>
-          </div>
+                    <p class="services__text_white">
+                        <script>
+                            get_i18n("service1");
+                        </script>
+                        —
+                        <script>
+                            get_i18n("from");
+                        </script>
+                    </p>
+                    <p class="fst-italic services__text_white services__text_green  ">
+                        500
+                        <script>
+                            get_i18n("currency");
+                        </script>
+                    </p>
+                </div>
+
+                <div class="col-lg-4 col-sm-12">
+                    <img src="img/nails.jpg" alt="nails" class="img-fluid col-xs-12 itd_img services__image" />
+
+                    <h3 class="services__text_white">
+                        <script>
+                            get_i18n("service2");
+                        </script>
+                        —
+                        <script>
+                            get_i18n("from");
+                        </script>
+                    </h3>
+                    <p class="fst-italic services__text_white services__text_green  ">
+                        300
+                        <script>
+                            get_i18n("currency");
+                        </script>
+                    </p>
+                </div>
+
+                <div class="col-lg-4 col-sm-12">
+                    <img src="img/makeup.jpg" alt="makeup" class="img-fluid col-xs-12 itd_img services__image" />
+                    <h4 class="services__text_white">
+                        <script>
+                            get_i18n("service3");
+                        </script>
+                        —
+                        <script>
+                            get_i18n("from");
+                        </script>
+                    </h4>
+                    <p class="fst-italic services__text_white services__text_green  ">
+                        400
+                        <script>
+                            get_i18n("currency");
+                        </script>
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
     <div class="empty-block"></div>
@@ -250,300 +244,435 @@
     <div class="row background_black"></div>
 
     <section class="about-us" id="about-us">
-      <div class="about-us__container container-fluid container mt-5">
-        <div class="row">
-          <div class="col-lg-7 col-sm-12">
-            <picture  class="w-500">
-              <source
-                media="(max-width: 1330px)"
-                srcset="img/salon-mobile.jpg"  
-              />
-              <img src="img/salon.jpg" class="w-100"  />
-            </picture>
-          </div>
-          <div class="col-lg-4 col-sm-12 ms-5">
-            <div
-              class="services__text_italic about-us_text_italic services__text_green fst-italic flex justify-content-center"
-            > <script>
-                get_i18n("about_us__text_italic", "en");
-              </script>
-            </div>
-            <div class="services__text_large flex justify-content-center mt-5 about_us__text_large">
-              <script>
-                get_i18n("about_us__text_large", "en");
-              </script>
-            </div>
-            <div
-              class="row services__text-description about-us__text-description flex justify-content-center mt-5 about-us__text"
-            >
-              <p>
-                <script>
-                  get_i18n("about_us__text_description1", "en");
-                </script>
-              </p>
-              <p class="about-us__text_dark-gray mt-4">
-                <script>
-                  get_i18n("about_us__text_description2", "en");
-                </script>
-              </p>
-            </div>
-            <div class="about-us__call-form col-sm-6">
-              <div class="about-us__circle col-lg-1 col-sm-12">
-                <span
-                  class="iconElement_3D2 ui-icon_2oI w-icon"
-                  style="color: #414e4a"
-                  ><span class="iconElement__inner_2iN"
-                    ><svg
-                    class="about-us__circle "
-                      width="50px"
-                      height="50px"
-                      xmlns:x="http://ns.adobe.com/Extensibility/1.0/"
-                      xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/"
-                      xmlns:graph="http://ns.adobe.com/Graphs/1.0/"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      version="1.1"
-                      x="0px"
-                      y="0px"
-                      viewBox="-255 347 100 100"
-                      style="
+        <div class="about-us__container container-fluid container mt-5">
+            <div class="row">
+                <div class="col-lg-7 col-sm-12">
+                    <picture class="w-500">
+                        <source media="(max-width: 1330px)" srcset="img/salon-mobile.jpg" />
+                        <img src="img/salon.jpg" class="w-100" />
+                    </picture>
+                </div>
+                <div class="col-lg-4 col-sm-12 ms-5">
+                    <div class="services__text_italic about-us_text_italic services__text_green fst-italic flex justify-content-center">
+                        <script>
+                            get_i18n("about_us__text_italic");
+                        </script>
+                    </div>
+                    <div class="services__text_large flex justify-content-center mt-5 about_us__text_large">
+                        <script>
+                            get_i18n("about_us__text_large");
+                        </script>
+                    </div>
+                    <div class="row services__text-description about-us__text-description flex justify-content-center mt-5 about-us__text">
+                        <p>
+                            <script>
+                                get_i18n("about_us__text_description1");
+                            </script>
+                        </p>
+                        <p class="about-us__text_dark-gray mt-4">
+                            <script>
+                                get_i18n("about_us__text_description2");
+                            </script>
+                        </p>
+                    </div>
+                    <div class="about-us__call-form col-sm-6">
+                        <div class="about-us__circle col-lg-1 col-sm-12">
+                            <span class="iconElement_3D2 ui-icon_2oI w-icon" style="color: #414e4a"><span
+                                    class="iconElement__inner_2iN"><svg class="about-us__circle " width="50px"
+                                        height="50px" xmlns:x="http://ns.adobe.com/Extensibility/1.0/"
+                                        xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/"
+                                        xmlns:graph="http://ns.adobe.com/Graphs/1.0/" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px"
+                                        viewBox="-255 347 100 100" style="
                         enable-background: new -255 347 100 100;
                         max-width: 100%;
-                      "
-                      xml:space="preserve"
-                      height="100%"
-                    >
-                      <switch style="" fill="currentColor">
-                        <foreignObject
-                          requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/"
-                          x="0"
-                          y="0"
-                          width="1"
-                          height="1"
-                          style=""
-                          fill="currentColor"
-                        ></foreignObject>
-                        <g i:extraneous="self" style="" fill="currentColor">
-                          <path
-                            d="M-220.5,374.5c1.4,1.4,2.7,2.7,4.1,4.1c2.4,2.4,2.4,5.2,0,7.6c-1.7,1.7-3.4,3.4-5.1,5.1    c-0.5,0.4-0.5,0.8-0.3,1.4c1.1,2.7,2.8,5.2,4.7,7.5c3.7,4.6,8,8.7,13,11.8c1.1,0.7,2.3,1.2,3.4,1.8c0.6,0.3,1,0.2,1.4-0.3    c1.7-1.8,3.4-3.5,5.2-5.2c2.3-2.3,5.1-2.3,7.4,0c2.8,2.8,5.6,5.6,8.4,8.3c2.3,2.3,2.3,5.2,0,7.6c-1.6,1.6-3.3,3.1-4.7,4.8    c-2.2,2.4-4.9,3.2-8,3c-4.5-0.2-8.7-1.8-12.8-3.7c-9-4.4-16.6-10.4-23-18c-4.7-5.6-8.7-11.8-11.2-18.7c-1.2-3.4-2.1-6.8-1.9-10.4    c0.2-2.2,1-4.1,2.7-5.7c1.8-1.7,3.5-3.5,5.2-5.2c2.3-2.2,5.1-2.2,7.4,0C-223.3,371.7-221.9,373.1-220.5,374.5z M-184.1,395.8    c-0.8-4.9-3.2-9.4-6.7-13c-3.7-3.7-8.5-6.1-13.7-6.9l-0.8,5.4c4.1,0.6,7.7,2.4,10.6,5.3c2.8,2.8,4.6,6.2,5.2,10.1L-184.1,395.8z     M-169.9,394.8c-1.4-8.2-5.3-15.7-11.2-21.6c-6.2-6.2-14.1-10.2-22.8-11.4l-0.8,5.4c7.5,1.1,14.3,4.4,19.7,9.8    c5.1,5.1,8.4,11.5,9.7,18.6L-169.9,394.8z"
-                            style=""
-                            fill="currentColor"
-                          ></path>
-                        </g>
-                      </switch></svg></span
-                ></span>
-              </div>
-              <div class="col-lg-6 ms-3 call-us-label">
-                <script>
-                  get_i18n("call_us", "en");
-                </script>
-              </div>
+                      " xml:space="preserve">
+                                        <switch   fill="currentColor">
+                                            <foreignObject
+                                                requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/" x="0"
+                                                y="0" width="1" height="1"  fill="currentColor"></foreignObject>
+                                            <g  fill="currentColor">
+                                                <path
+                                                    d="M-220.5,374.5c1.4,1.4,2.7,2.7,4.1,4.1c2.4,2.4,2.4,5.2,0,7.6c-1.7,1.7-3.4,3.4-5.1,5.1    c-0.5,0.4-0.5,0.8-0.3,1.4c1.1,2.7,2.8,5.2,4.7,7.5c3.7,4.6,8,8.7,13,11.8c1.1,0.7,2.3,1.2,3.4,1.8c0.6,0.3,1,0.2,1.4-0.3    c1.7-1.8,3.4-3.5,5.2-5.2c2.3-2.3,5.1-2.3,7.4,0c2.8,2.8,5.6,5.6,8.4,8.3c2.3,2.3,2.3,5.2,0,7.6c-1.6,1.6-3.3,3.1-4.7,4.8    c-2.2,2.4-4.9,3.2-8,3c-4.5-0.2-8.7-1.8-12.8-3.7c-9-4.4-16.6-10.4-23-18c-4.7-5.6-8.7-11.8-11.2-18.7c-1.2-3.4-2.1-6.8-1.9-10.4    c0.2-2.2,1-4.1,2.7-5.7c1.8-1.7,3.5-3.5,5.2-5.2c2.3-2.2,5.1-2.2,7.4,0C-223.3,371.7-221.9,373.1-220.5,374.5z M-184.1,395.8    c-0.8-4.9-3.2-9.4-6.7-13c-3.7-3.7-8.5-6.1-13.7-6.9l-0.8,5.4c4.1,0.6,7.7,2.4,10.6,5.3c2.8,2.8,4.6,6.2,5.2,10.1L-184.1,395.8z     M-169.9,394.8c-1.4-8.2-5.3-15.7-11.2-21.6c-6.2-6.2-14.1-10.2-22.8-11.4l-0.8,5.4c7.5,1.1,14.3,4.4,19.7,9.8    c5.1,5.1,8.4,11.5,9.7,18.6L-169.9,394.8z"
+                                                     fill="currentColor"></path>
+                                            </g>
+                                        </switch>
+                                    </svg></span></span>
+                        </div>
+                        <div class="col-lg-6 ms-3 call-us-label">
+                            <script>
+                                get_i18n("call_us");
+                            </script>
+                        </div>
+                    </div>
+                    <div class="about-us__phone">+1 (234) 567 89 00</div>
+                </div>
             </div>
-            <div class="about-us__phone">+1 (234) 567 89 00</div>
-          </div>
         </div>
-      </div>
     </section>
 
     <div class="empty-block"></div>
 
     <section class="features-list">
-      <div class="about-us__container container-fluid container mt-5">
-        <div class="row">
-          <div class="col-lg-1 col-sm-12">
-            <img
-              src="img/vector1-removebg-preview.png"
-              class="features-list__img ms-5"
-            />
-          </div>
-          <div class="col-lg-2 col-sm-12">
-            <p class="services__text_white">
-              <script>
-                get_i18n("features_list__text_white1", "en");
-              </script>
-            </p>
-            <p class="about-us__text_gray mt-3">
-              <script>
-                get_i18n("features_list__text_description1", "en");
-              </script>
-            </p>
-          </div>
-          <div class="col-lg-1 col-sm-12">
-            <img
-              src="img/vector2-removebg-preview.png"
-              class="features-list__img ms-5"
-            />
-          </div>
-          <div class="col-lg-2 col-sm-12">
-            <p class="services__text_white">
-              <script>
-                get_i18n("features_list__text_white2", "en");
-              </script>
-            </p>
-            <p class="about-us__text_gray mt-3">
-              <script>
-                get_i18n("features_list__text_description2", "en");
-              </script>
-            </p>
-          </div>
-          <div class="col-lg-1 col-sm-12">
-            <img
-              src="img/vector3-removebg-preview.png"
-              class="features-list__img ms-5"
-            />
-          </div>
-          <div class="col-lg-2 col-sm-12">
-            <p class="services__text_white">
-              <script>
-                get_i18n("features_list__text_white3", "en");
-              </script>
-            </p>
-            <p class="about-us__text_gray mt-3">
-              <script>
-                get_i18n("features_list__text_description3", "en");
-              </script>
-            </p>
-          </div>
-          <div class="col-lg-1 col-sm-12">
-            <img
-              src="img/vector4-removebg-preview.png"
-              class="features-list__img ms-5"
-            />
-          </div>
-          <div class="col-lg-2 col-sm-12">
-            <p class="services__text_white">
-              <script>
-                get_i18n("features_list__text_white4", "en");
-              </script>
-            </p>
-            <p class="about-us__text_gray mt-3">
-              <script>
-                get_i18n("features_list__text_description4", "en");
-              </script>
-            </p>
-          </div>
+        <div class="about-us__container container-fluid container mt-5">
+            <div class="row">
+                <div class="col-lg-1 col-sm-12">
+                    <img src="img/vector1-removebg-preview.png" class="features-list__img ms-5" />
+                </div>
+                <div class="col-lg-2 col-sm-12">
+                    <p class="services__text_white">
+                        <script>
+                            get_i18n("features_list__text_white1");
+                        </script>
+                    </p>
+                    <p class="about-us__text_gray mt-3">
+                        <script>
+                            get_i18n("features_list__text_description1");
+                        </script>
+                    </p>
+                </div>
+                <div class="col-lg-1 col-sm-12">
+                    <img src="img/vector2-removebg-preview.png" class="features-list__img ms-5" />
+                </div>
+                <div class="col-lg-2 col-sm-12">
+                    <p class="services__text_white">
+                        <script>
+                            get_i18n("features_list__text_white2");
+                        </script>
+                    </p>
+                    <p class="about-us__text_gray mt-3">
+                        <script>
+                            get_i18n("features_list__text_description2");
+                        </script>
+                    </p>
+                </div>
+                <div class="col-lg-1 col-sm-12">
+                    <img src="img/vector3-removebg-preview.png" class="features-list__img ms-5" />
+                </div>
+                <div class="col-lg-2 col-sm-12">
+                    <p class="services__text_white">
+                        <script>
+                            get_i18n("features_list__text_white3");
+                        </script>
+                    </p>
+                    <p class="about-us__text_gray mt-3">
+                        <script>
+                            get_i18n("features_list__text_description3");
+                        </script>
+                    </p>
+                </div>
+                <div class="col-lg-1 col-sm-12">
+                    <img src="img/vector4-removebg-preview.png" class="features-list__img ms-5" />
+                </div>
+                <div class="col-lg-2 col-sm-12">
+                    <p class="services__text_white">
+                        <script>
+                            get_i18n("features_list__text_white4");
+                        </script>
+                    </p>
+                    <p class="about-us__text_gray mt-3">
+                        <script>
+                            get_i18n("features_list__text_description4");
+                        </script>
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
     <section class="video">
-      <div class="container">
-        <div class="row ms-5 mt-5 video__row">
-          <div class="video video__container col-lg-12">
-            <video id="video" autoplay loop muted>
-              <source src="img/video.mp4" type="video/mp4" />
-            </video>
-            <div class="buttons flex justify-content-center">
-              <button type="button" onclick="playPause(this)" class="btn">
-                &#9646;&#9646;
-              </button>
+        <div class="container">
+            <div class="row mt-5 video__row">
+                <div class="video video__container col-lg-12">
+                    <video id="video" autoplay loop muted>
+                        <source src="img/video.mp4" type="video/mp4" />
+                    </video>
+                    <div class="buttons flex justify-content-center">
+                        <button type="button" onclick="playPause(this)" class="btn">
+                            &#9646;&#9646;
+                        </button>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <section class="team">
-      <div class="container">
-        <div class="row team__description ms-5 mt-5">
-          <div
-            class="row services__text_italic services__text_green fst-italic flex justify-content-center"
-          >
-            <script>
-              get_i18n("team__text_italic", "en");
-            </script>
-          </div>
-          <div
-            class="row services__text_large team__text flex justify-content-center mt-3"
-          >
-            <script>
-              get_i18n("team__text_large", "en");
-            </script>
-          </div>
-          <div
-            class="row services__text-description flex text-center justify-content-center mt-5"
-          >
-            <script>
-              get_i18n("team__text_description", "en");
-            </script>
-          </div>
-        </div>
-        <div class="row team__row ms-5">
-          <div class="col-lg-3">
-            <img src="img/worker1.jpg" class="team__img mb-4" alt="worker 1" />
-            <p class="services__text_white mt-3">
-              <script>
-                get_i18n("worker1_name", "en");
-              </script>
-            </p>
-            <p class="services__text_green mt-3  mb-5">
-              <script>
-                get_i18n("worker1_job", "en");
-              </script>
-            </p>
-          </div>
-          <div class="col-lg-3">
-            <img src="img/worker2.jpg" class="team__img mb-4" alt="worker 1" />
+        <div class="container">
+            <div class="row team__description mt-5">
+                <div class="row services__text_italic services__text_green fst-italic flex justify-content-center">
+                    <script>
+                        get_i18n("team__text_italic");
+                    </script>
+                </div>
+                <div class="row services__text_large team__text flex justify-content-center mt-3">
+                    <script>
+                        get_i18n("team__text_large");
+                    </script>
+                </div>
+                <div class="row services__text-description flex text-center justify-content-center mt-5">
+                    <script>
+                        get_i18n("team__text_description");
+                    </script>
+                </div>
+            </div>
+            <div class="row team__row  ">
+                <div class="col-lg-3">
+                    <img src="img/worker1.jpg" class="team__img mb-4" alt="worker 1" />
+                    <p class="services__text_white mt-3">
+                        <script>
+                            get_i18n("worker1_name");
+                        </script>
+                    </p>
+                    <p class="services__text_green mt-3  mb-5">
+                        <script>
+                            get_i18n("worker1_job");
+                        </script>
+                    </p>
+                </div>
+                <div class="col-lg-3">
+                    <img src="img/worker2.jpg" class="team__img mb-4" alt="worker 1" />
 
-            <p class="services__text_white mt-3">
-              <script>
-                get_i18n("worker2_name", "en");
-              </script>
-            </p>
-            <p class="services__text_green mt-3  mb-5">
-              <script>
-                get_i18n("worker2_job", "en");
-              </script>
-            </p>
-          </div>
-          <div class="col-lg-3">
-            <img src="img/worker3.jpg" class="team__img mb-4" alt="worker 1" />
+                    <p class="services__text_white mt-3">
+                        <script>
+                            get_i18n("worker2_name");
+                        </script>
+                    </p>
+                    <p class="services__text_green mt-3  mb-5">
+                        <script>
+                            get_i18n("worker2_job");
+                        </script>
+                    </p>
+                </div>
+                <div class="col-lg-3">
+                    <img src="img/worker3.jpg" class="team__img mb-4" alt="worker 1" />
 
-            <p class="services__text_white mt-3">
-              <script>
-                get_i18n("worker3_name", "en");
-              </script>
-            </p>
-            <p class="services__text_green mt-3 mb-5">
-              <script>
-                get_i18n("worker3_job", "en");
-              </script>
-            </p>
-          </div>
+                    <p class="services__text_white mt-3">
+                        <script>
+                            get_i18n("worker3_name");
+                        </script>
+                    </p>
+                    <p class="services__text_green mt-3 mb-5">
+                        <script>
+                            get_i18n("worker3_job");
+                        </script>
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <!-- <section class="banners">
-      <div class="container">
-        <div class="row row__banners ms-5 mt-5">
-          <div class="col-lg-3">
-            <img src="img/banner.jpg" class="img__banner" />
-          </div>
-        </div>
-      </div>
-    </section> -->
+    <section class="banners">
+        <div class="banners__container container-fluid">
+            <div class="row row__banners  mt-5">
+                <div class="col-lg-6 col-sm-12 banner-hand">
+                    <img src="img/banner.jpg" class="img__banner" />
+                    <p class="services__text_italic services__text_green fst-italic flex justify-content-center banners__text">
+                        <script>
+                            get_i18n("products");
+                        </script>
+                    </p>
+                    <p class="services__text_large team__text banners__text_large flex justify-content-center mt-3">
+                        <script>
+                            get_i18n("products_title");
+                        </script>
+                    </p>
 
-    <div class="row row__empty-block"></div>
+                    <p class="services__text-description flex banners__text_description justify-content-center mt-5">
+                        <script>
+                            get_i18n("products_description");
+                        </script>
+                    </p>
+                </div>
+
+                <div class="col-lg-4 col-sm-12 banner-roses">
+                    <img src="img/roses.jpg" class="img__banner" />
+                    <div class="wraper gx-0">
+                        <p class="services__text_large team__text banners__text_large banners__sale-text banners__sale-text_green">
+                            <script>
+                                get_i18n("sale_title");
+                            </script>
+                            <span class="services__text_large team__text banners__text_large banners__sale-text ">
+                                <script>
+                                    get_i18n("sale_amount");
+                                </script>
+                            </span>
+                        </p>
+                    </div>
+                    <p class="services__text-description flex   banners__text_description banner__sale-description  mt-5">
+                        <script>
+                            get_i18n("sale_description");
+                        </script>
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="reviews">
+        <div class="container-fluid">
+            <div class="row services__text_italic services__text_green fst-italic flex justify-content-center reviews__text_italic">
+                <script>
+                    get_i18n("reviews_subtitle");
+                </script>
+            </div>
+            <div class="row services__text_large team__text flex justify-content-center mt-3">
+                <script>
+                    get_i18n("reviews_title");
+                </script>
+            </div>
+            <div class="row services__text-description flex text-center justify-content-center mt-5">
+                <script>
+                    get_i18n("reviews_description");
+                </script>
+            </div>
+            <button class="pre-btn"><img src="img/arrow.png"  alt=""></button>
+            <button class="nxt-btn"><img src="img/arrow.png"  " alt=""></button>
+
+            <!-- NEW CAROUSEL -->
+
+            <div class="product-container">
+                <div class="product-card col-lg-6 mt-4">
+                    <div class="product-info">
+                        <div class="round_image1 mb-3">
+                            <img src="img/reviews1.jpg" alt="процесс обучения" class="img-fluid col-xs-12 mt-5 itd_img round_image" />
+                        </div>
+                        <h4 class="text-center mb-3 reviews__name  ">
+                            <script>
+                                get_i18n("review_person1");
+                            </script>
+                        </h4>
+                        <p class="reviews__details text-center mb-4">
+                            <script>
+                                get_i18n("review1_details");
+                            </script>
+                        </p>
+
+                        <p class="text-center mb-4 mt-1 reviews__text  px-5">
+                            <script>
+                                get_i18n("review1");
+                            </script>
+
+                        </p>
+                        <p class="text-center mb-5">
+                            <strong>
+                                <script>
+                                    get_i18n("date1") 
+                                </script>
+                            </strong>
+                        </p>
+                        <div class=" line line2 "></div>
+
+                    </div>
+                </div>
+
+                <div class="product-card col-lg-6  mt-4">
+                    <div class="product-info">
+                        <div class="round_image1 mb-3">
+                            <img src="img/reviews2.jpg" alt="процесс обучения" class="img-fluid col-xs-12 mt-5 itd_img round_image" />
+                        </div>
+                        <h4 class="text-center mb-3 reviews__name  ">
+                            <script>
+                                get_i18n("review_person2");
+                            </script>
+                        </h4>
+                        <p class="reviews__details text-center mb-4">
+                            <script>
+                                get_i18n("review1_details");
+                            </script>
+                        </p>
+
+                        <p class="text-center mb-4 mt-1 reviews__text  px-5">
+                            <script>
+                                get_i18n("review2");
+                            </script>
+
+                        </p>
+                        <p class="text-center mb-5">
+                            <strong>
+                                <script>
+                                    get_i18n("date2") 
+                                </script>
+                            </strong>
+                        </p>
+                        <div class=" line line2 "></div>
+
+                    </div>
+                </div>
+
+                <div class="product-card col-lg-6  mt-4">
+                    <div class="product-info">
+                        <div class="round_image1 mb-3">
+                            <img src="img/reviews3.png" alt="процесс обучения" class="img-fluid col-xs-12 mt-5 itd_img round_image" />
+                        </div>
+                        <h4 class="text-center mb-3 reviews__name  ">
+                            <script>
+                                get_i18n("review_person3");
+                            </script>
+                        </h4>
+                        <p class="reviews__details text-center mb-4">
+                            <script>
+                                get_i18n("review1_details");
+                            </script>
+                        </p>
+
+                        <p class="text-center mb-4 mt-1 reviews__text  px-5">
+                            <script>
+                                get_i18n("review3");
+                            </script>
+
+                        </p>
+                        <p class="text-center mb-5">
+                            <strong>
+                                <script>
+                                    get_i18n("date3") 
+                                </script>
+                            </strong>
+                        </p>
+                        <div class=" line line2 "></div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        const productContainers = [...document.querySelectorAll('.product-container')];
+        const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
+        const preBtn = [...document.querySelectorAll('.pre-btn')];
+
+        productContainers.forEach((item, i) => {
+            let containerDimensions = item.getBoundingClientRect();
+            let containerWidth = containerDimensions.width;
+
+            nxtBtn[i].addEventListener('click', () => {
+                item.scrollLeft += containerWidth;
+            })
+
+            preBtn[i].addEventListener('click', () => {
+                item.scrollLeft -= containerWidth;
+            })
+        })
+    </script>
+    <div class="row row__empty-block "></div>
 
     <!-- <footer>
-      <div class="pusto"></div>
-      <div class="pusto"></div>
-      <table class="footertable">
+      <div class="pusto "></div>
+      <div class="pusto "></div>
+      <table class="footertable ">
           <tr>
               <td>
                   <div>Киев, ул. Сечевых Стрельцов, 14-А , 10003 </div>
-                  <div>Салон ООО "Бьютистудио" (212)-529-0241 </div>
+                  <div>Салон ООО "Бьютистудио " (212)-529-0241 </div>
               </td>
-              <td style="margin-left:100px; text-align:right;">Музыка в салоне сейчас: Zayn - Dusk till Dawn</td>
+              <td style="margin-left:100px; text-align:right; ">Музыка в салоне сейчас: Zayn - Dusk till Dawn</td>
               <td>
-                  <div class="playe22r"><audio style="  width: 90%;
-  opacity: 30%;
-  color:#0f1010;
-  margin-top:30px;
-  margin-bottom:-30px;
-  margin-right:90px;
-  text-align: left;" controls autoplay muted><source src="music.mp3" type="audio/mp3" ></audio></td>
+                  <div class="playe22r "><audio style=" width: 90%; opacity: 30%; color:#0f1010; margin-top:30px; margin-bottom:-30px; margin-right:90px; text-align: left; " controls autoplay muted><source src="music.mp3 " type="audio/mp3 " ></audio></td>
           </tr>
 
 
@@ -551,11 +680,8 @@
       </table>
       </div>
   </footer> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz " crossorigin="anonymous "></script>
+</body>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-  </body>
 </html>
