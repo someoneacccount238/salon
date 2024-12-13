@@ -142,9 +142,31 @@ var translation = {
     },
     date1: { ru: "15 сентября, 2024", en: "September 15, 2024" },
     date2: { ru: "5 ноября, 2024", en: "November 5, 2024" },
-    date3: { ru: "22 марта, 2024", en: "March 22, 2024" }
-
-
+    date3: { ru: "22 марта, 2024", en: "March 22, 2024" },
+    contacts: { ru: "Контакты", en: "Contacts" },
+    contact_us_now: {
+        ru: "СВЯЖИТЕСЬ С НАМИ ПРЯМО СЕЙЧАС",
+        en: "CONTACT US NOW"
+    },
+    contacts_description: {
+        ru: "Не забудьте записаться на прием, чтобы получить лучший сервис!",
+        en: "Don't forget to book an appointment to get the best service!"
+    },
+    address: { ru: "Адрес", en: "Аddress" },
+    address_line: { ru: "Киев, ул. Сечевых Стрельцов, 14-А , 10003 ", en: "Kiev, 14-A Sichevykh Streltsov str. , 10003" },
+    phone: { ru: "Телефон", en: "Phone" },
+    email: { ru: "E-mail", en: "Email" },
+    footer: { ru: "Уход, которого вы заслуживаете.", en: "Nail care you deserve." },
+    services: {
+        ru: "Сервисы ",
+        en: "Services"
+    },
+    about: { ru: "О нас", en: "About" },
+    manicure: { ru: "Маникюр", en: "Manicure" },
+    hairstyles: { ru: "Прически", en: "Hairstyles" },
+    testimonials: { ru: "Отзывы", en: "Testimonials" },
+    created_by: { ru: "© Сделано", en: "© Created by" },
+    all_rights_reserved: { ru: "Все права защищены", en: "All rights Reserved" }
 };
 
 // simple function to write the info to the page
@@ -152,7 +174,3 @@ function get_i18n(item) {
     var lang = "ru";
     document.write(translation[item][lang]);
 }
-
-/* =============
-   REVIEWS CAROUSEL
-   =============  */

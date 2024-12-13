@@ -32,7 +32,7 @@
      }
      
      .pusto11 {
-         height: 370px;
+         height: 240px;
      }
      
      .pusto2 {
@@ -100,13 +100,18 @@
          border-radius: 12px;
          font-family: "Rubik", sans-serif;
          border: none;
-         color: white;
+         color: white !important;
          padding: 20px;
          text-align: center;
          text-decoration: none;
          display: inline-block;
          font-size: 16px;
          margin: 4px 2px;
+     }
+     
+     .title__action-btn {
+         color: white !important;
+         text-decoration: none !important;
      }
      
      .title__button {
@@ -664,6 +669,7 @@
          margin: 0;
          width: 100%;
          padding: 0 !important;
+         margin-top: -200px;
      }
      
      .empty-block {
@@ -1343,4 +1349,122 @@
      .collection:nth-child(3) {
          grid-column: span 2;
          margin-bottom: 10px;
+     }
+     /* =============
+           CONTACTS
+           =============  */
+     
+     .contacts {
+         margin-top: 130px;
+     }
+     
+     .contacts__map {
+         -webkit-filter: grayscale(100%);
+         filter: grayscale(100%);
+         margin-left: -11px;
+         ;
+     }
+     
+     .contacts__map-block {
+         border: 10px solid var(--color1) !important;
+         display: flex;
+     }
+     
+     .contacts__circle {
+         width: 60px !important;
+         ;
+     }
+     
+     .contacts__text {
+         line-height: 25px;
+     }
+     
+     .contacts__row {
+         display: flex;
+         justify-content: space-between;
+     }
+     
+     .contacts__text_small {
+         margin-left: -100px !important;
+     }
+     
+     .contacts__text-block {
+         position: relative;
+         left: -85px !important;
+         line-height: 25px;
+         ;
+     }
+     /* =============
+           FOOTER
+           =============  */
+     
+     footer {
+         text-align: center;
+         padding: 5px;
+         background-color: var(--color2);
+         color: var(--color3);
+         position: absolute;
+         bottom: 0 !important;
+         height: 300px;
+         top: 6900px;
+     }
+     
+     .footer__text {
+         font-size: 13px;
+         font-family: "Rubik", sans-serif;
+         position: absolute !important;
+         left: 120px !important;
+         top: 120px !important;
+     }
+     
+     .footer__img {
+         margin-left: 650px;
+         margin-top: 100px !important;
+     }
+     
+     .footer__icons {
+         width: 12px;
+     }
+     
+     .footer__icons_instagram {
+         width: 20px !important;
+     }
+     
+     .footer__icons-box {
+         display: flex;
+         width: 200px;
+         justify-content: space-evenly !important;
+         position: absolute;
+         right: 120px !important;
+         top: 120px !important;
+     }
+     
+     .footer__menu {
+         color: white;
+         position: absolute;
+         top: 200px;
+         display: flex !important;
+         justify-content: space-between;
+         gap: 35px;
+     }
+     
+     hr {
+         position: absolute;
+         top: 230px;
+         width: 1200px;
+         height: 5px;
+     }
+     
+     .footer__text-under {
+         font-size: 13px;
+         font-family: "Rubik", sans-serif;
+         position: absolute !important;
+         top: 270px;
+         color: white;
+         left: 120px;
+     }
+     
+     .footer__rights-rext {
+         position: absolute;
+         right: -1000px !important;
      }
