@@ -1094,7 +1094,13 @@
      .banners__sale-text {
          text-align: center !important;
          font-size: 56px !important;
-         margin-left: -1px;
+         margin-top: -200px !important;
+         margin-left: 0;
+     }
+     
+     .banners__sale-text_green {
+         margin-left: -40px;
+         margin-top: -200px !important;
      }
      
      .banners__sale-text_green {
@@ -1111,7 +1117,7 @@
      .banner__sale-description {
          width: 1000px !important;
          margin-top: 50px !important;
-         margin-left: 120px !important;
+         margin-left: 90px !important;
      }
      
      .reviews__text_italic {
