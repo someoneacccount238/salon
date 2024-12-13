@@ -813,8 +813,7 @@
              left: 0;
          }
      }
-     
-     @media (max-width: 1330px) {
+     /* @media (max-width: 1330px) {
          .wraper {
              overflow-x: hidden !important;
              position: relative;
@@ -952,6 +951,7 @@
              right: 0 !important;
          }
      }
+      */
      
      .about-us__phone {
          font-family: "Playfair Display", serif;
