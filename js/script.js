@@ -171,6 +171,6 @@ var translation = {
 
 // simple function to write the info to the page
 function get_i18n(item) {
-    var lang = "ru";
+    var lang = "en";
     document.write(translation[item][lang]);
 }
